@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoroplethMap</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id='title' x="450" y="20">United States Educational Attainment</h1>
+    <h3 id='description' x="450" y="50">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</h3>
+    <div id="tooltip"></div>
+    <svg id="canvas"></svg>
+
+    <svg id="legend">
+    <g>
+        <rect x="10" y="0" width="40" height="20" fill='beige'> </rect>
+        <text x="100" y="20"  fill='black'> Less than 15% </text>
+    </g>
+    <g>
+        <rect x="10" y="40" width="40" height="20" fill='rosybrown'> </rect>
+        <text x="100" y="60"  fill='black'> 15% to 30%</text>
+    </g>
+    <g>
+        <rect x="10" y="80" width="40" height="20" fill='yellow'> </rect>
+        <text x="100" y="100"  fill='black'> 30% to 45%</text>
+    </g>
+    <g>
+        <rect x="10" y="120" width="40" height="20" fill='salmon'> </rect>
+        <text x="100" y="140"  fill='black'> More than 45%</text>
+
+    </svg> 
+
+
+    
+</body>
+    <script defer src='script.js'></script>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>
